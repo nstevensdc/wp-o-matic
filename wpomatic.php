@@ -1075,7 +1075,7 @@ class WPOMatic {
    */
   function adminMenu()
   {
-    add_submenu_page('options-general.php', 'WP-o-Matic', 'WP-o-Matic', 10, basename(__FILE__), array(&$this, 'admin'));
+    add_submenu_page('options-general.php', 'WP-o-Matic', 'WP-o-Matic', 'manage_options', basename(__FILE__), array(&$this, 'admin'));
   }
 
 
