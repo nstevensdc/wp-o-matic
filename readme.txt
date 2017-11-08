@@ -1,3 +1,7 @@
+=== Daily Caller Fork ===
+
+Below is the original WP-o-Matic readme, which may not apply now that the developer is not maintaining the public release.
+
 === WP-o-Matic ===
 Contributors: rrauch
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3FTUJLTN3ZVVG
