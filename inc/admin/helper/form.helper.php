@@ -310,7 +310,7 @@ function textarea_tag($name, $content = null, $options = array())
 
   if ($size = _get_option($options, 'size'))
   {
-    list($options['cols'], $options['rows']) = split('x', $size, 2);
+    list($options['cols'], $options['rows']) = explode('x', $size, 2);
   }
 
   return content_tag('textarea', escape_once((is_object($content)) ? $content->__toString() : $content), array_merge(array('name' => $name, 'id' => get_id_from_name(_get_option($options, 'id', $name), null)), _convert_options($options)));

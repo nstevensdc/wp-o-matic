@@ -29,8 +29,7 @@ class WPOMatic {
   var $campaign_structure = array('main' => array(), 'rewrites' => array(),
                                   'categories' => array(), 'feeds' => array());
 
-  # __construct()
-  function WPOMatic()
+  function __construct()
   {
     global $wpdb, $wp_version;
 
@@ -716,7 +715,7 @@ class WPOMatic {
   {
     # SimplePie
     if(! class_exists('SimplePie'))
-      require_once( WPOINC . 'simplepie/simplepie.class.php' );
+      require_once ABSPATH . 'wp-includes/class-simplepie.php';
 
     $feed = new SimplePie();
     $feed->enable_order_by_date(false); // thanks Julian Popov
@@ -2001,4 +2000,4 @@ class WPOMatic {
   }
 }
 
-$wpomatic = & new WPOMatic();
+$wpomatic = new WPOMatic();
